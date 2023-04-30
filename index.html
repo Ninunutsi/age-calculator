@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="calculator">
+        <div class="inputs-row">
+            <div class="inputs">
+                <label for="day" class="day-label">Day</label>
+                <input type="text" pattern="[0-9]{1,5}"  maxlength="2" required placeholder="DD" class="day-input" id="day">
+                <span class="error-msg" id="date_error"></span>
+            </div>
+            <div class="inputs">
+                <label for="day" class="day-label">Month</label>
+                <input type="text" maxlength="2" required placeholder="MM" class="day-input" id="month">
+                <span class="error-msg" id="month_error"></span>
+            </div>
+            <div class="inputs">
+                <label for="day" class="day-label">Year</label>
+                <input type="text" maxlength="4" required placeholder="YYYY" class="day-input" id="year">
+                <span class="error-msg" id="year_error"></span>
+            </div>
+        </div>
+        <div class="button">
+            <hr class="hr">
+            <button class="btn" id="btn"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+
+        <div>
+            <span class="span color" id="years">--</span>
+            <span class="span">years</span>
+        </div>
+        <div>
+            <span class="span color" id="months">--</span>
+            <span class="span">months</span>
+        </div>
+        <div>
+            <span class="span color" id="days">--</span>
+            <span class="span">days</span>
+        </div>
+    </div>
+<script src="./assets/script.js"></script>
+</body>
+</html>
